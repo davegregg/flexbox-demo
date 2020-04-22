@@ -24,9 +24,9 @@
   --item-3-color: lightcoral;
   --item-3-border-color: rgb(186, 90, 90);
   --item-3-border-hover-color: rgb(241, 188, 188);
-  --border-default: var(--border-size) solid white;
   
-  /* TEXT */
+  /* MISC */
+  --border-default: var(--border-size) solid;
   font-family: sans-serif;
 }
 
@@ -43,14 +43,12 @@ main {
 article {
   width: var(--article-width);
   margin-bottom: 50px;
-  opacity: 65%;
+  opacity: 75%;
 }
 
 article:hover {
-  /* border-color: var(--container-border-hover-color); */
   opacity: 100%;
 }
-
 
 h1 {
   color: var(--text-color);
@@ -61,15 +59,15 @@ h1 {
 a {
   color: var(--text-color);
   text-decoration: none;
-  border-bottom: 1px dashed black;
+  border-bottom: 2px dashed grey;
 }
 
 a:hover {
-  border-bottom: 2px solid black;
+  border-bottom-color: black;
 }
 
 a:active {
-  border-bottom: 2px solid hotpink;
+  border-bottom-color: hotpink;
 }
 
 h3 {
