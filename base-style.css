@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* SIZES */
+  --article-width: 400px;
+  --article-height: 300px;
+  --item-size: 50px;
+  --border-size: 8px;
+  
+  /* COLORS */
+  --text-color: rgba(0, 0, 0, 0.774);
+  --background-color: gainsboro;
+  --container-color: lightblue;
+  --container-border-color: rgb(124, 163, 177);
+  --container-border-hover-color: rgb(208, 232, 240);
+  --item-1-color: thistle;
+  --item-1-border-color: rgb(154, 122, 154);
+  --item-1-border-hover-color: rgb(235, 217, 235);
+  --item-2-color: lightgreen;
+  --item-2-border-color: rgb(78, 155, 78);
+  --item-2-border-hover-color: rgb(191, 247, 191);
+  --item-3-color: lightcoral;
+  --item-3-border-color: rgb(186, 90, 90);
+  --item-3-border-hover-color: rgb(241, 188, 188);
+  --border-default: var(--border-size) solid white;
+  
+  /* TEXT */
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article {
+  width: var(--article-width);
+  margin-bottom: 50px;
+  opacity: 65%;
+}
+
+article:hover {
+  /* border-color: var(--container-border-hover-color); */
+  opacity: 100%;
+}
+
+
+h1 {
+  color: var(--text-color);
+  line-height: 1em;
+  text-align: center;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px dashed black;
+}
+
+a:hover {
+  border-bottom: 2px solid black;
+}
+
+a:active {
+  border-bottom: 2px solid hotpink;
+}
+
+h3 {
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+.container {
+  background-color: var(--container-color);
+  border: var(--border-default);
+  border-color: var(--container-border-color);
+  padding: 10px;
+  height: var(--article-height);
+  width: 100%;
+}
+
+.item {
+  border: var(--border-default);
+  height: var(--item-size);
+  width: var(--item-size);
+}
+
+.item:nth-child(1) {
+  background-color: var(--item-1-color);
+  border-color: var(--item-1-border-color);
+}
+
+.item:nth-child(1):hover {
+  border-color: var(--item-1-border-hover-color);
+}
+
+.item:nth-child(2) {
+  background-color: var(--item-2-color);
+  border-color: var(--item-2-border-color);
+}
+
+.item:nth-child(2):hover {
+  border-color: var(--item-2-border-hover-color);
+}
+
+.item:nth-child(3) {
+  background-color: var(--item-3-color);
+  border-color: var(--item-3-border-color);
+}
+
+.item:nth-child(3):hover {
+  border-color: var(--item-3-border-hover-color);
+}
