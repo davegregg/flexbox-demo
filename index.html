@@ -15,7 +15,16 @@
   
       <article id="jump-to-container-14">
         <h1><a href="#jump-to-container-14"><span>14</span> – <em>Flex-Grow</em></a></h1>
-        <details open></details>
+        <details>
+          <p><code>flex-grow</code> determines how much of the <em>available space</em> this <em>flex item</em> can grow to take up.</p>
+
+          <p>If you provide a <code>flex-grow</code> value other than <code>0</code>, you are saying to the browser,
+            <blockquote>
+              Listen, if there is some extra space remaining, I want this flex item to eat up some of it. The more this flex item eats, <em>compared to other flex items in the container,</em> the bigger it can grow.
+            </blockquote>
+          </p>
+          <p>SCENARIO – If the first item has a <code>flex-grow: 3;</code>, and the second item has a <code>flex-grow: 1;</code>, then the first item will consume 3 portions of the extra space, and the second item will consume 1 portion of that extra space. If the <em>third</em> item has been given no <code>flex-grow</code> value, it will default to 0 portions of the extra space.</p>
+        </details>
         <div class="container container-14">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -25,9 +34,9 @@
 
       <article id="jump-to-container-13">
         <h1><a href="#jump-to-container-13"><span>13</span> – <em>Flex-Basis</em></a></h1>
-        <details open>
+        <details>
           <p>
-            <code>flex-basis</code> can be thought of as an ideal and flow-safe width for a flex item. It is designed to avoid breaking the layout – something <code>width</code> will often do. It takes priority over <code>width</code>.
+            <code>flex-basis</code> can be thought of as an ideal and flow-safe width for a <em>flex item</em>. It is designed to avoid breaking the layout – something <code>width</code> will often do. It takes priority over <code>width</code>.
           </p>
           
           <p>
@@ -48,7 +57,7 @@
       </article>
 
       <article id="jump-to-container-12">
-        <h1><a href="#jump-to-container-12"><span>12</span> – <em>Column + Justify Between + Align End</em></a></h1>
+        <h1><a href="#jump-to-container-12"><span>12</span> – <em>Column + Space-Between + Align: End</em></a></h1>
         <details open></details>
         <div class="container container-12">
           <div class="item item-1"><div>1</div></div>
@@ -58,7 +67,7 @@
       </article>
 
       <article id="jump-to-container-11">
-        <h1><a href="#jump-to-container-11"><span>11</span> – <em>Flex-Direction</em></a></h1>
+        <h1><a href="#jump-to-container-11"><span>11</span> – <em>Change the Axis: Column</em></a></h1>
         <details open></details>
         <div class="container container-11">
           <div class="item item-1"><div>1</div></div>
@@ -68,7 +77,7 @@
       </article>
 
       <article id="jump-to-container-10">
-        <h1><a href="#jump-to-container-10"><span>10</span> – <em>Row Reverse</em></a></h1>
+        <h1><a href="#jump-to-container-10"><span>10</span> – <em>Row-Reverse</em></a></h1>
         <details open></details>
         <div class="container container-10">
           <div class="item item-1"><div>1</div></div>
@@ -78,7 +87,7 @@
       </article>
 
       <article id="jump-to-container-9">
-        <h1><a href="#jump-to-container-9"><span>9</span> – <em>Justify Around - Align Center</em></a></h1>
+        <h1><a href="#jump-to-container-9"><span>9</span> – <em>Space-Around + Align: Center</em></a></h1>
         <details open></details>
         <div class="container container-9">
           <div class="item item-1"><div>1</div></div>
@@ -88,7 +97,7 @@
       </article>
 
       <article id="jump-to-container-8">
-        <h1><a href="#jump-to-container-8"><span>8</span> – <em>Align Center</em></a></h1>
+        <h1><a href="#jump-to-container-8"><span>8</span> – <em>Align: Center</em></a></h1>
         <details open></details>
         <div class="container container-8">
           <div class="item item-1"><div>1</div></div>
@@ -98,7 +107,7 @@
       </article>
 
       <article id="jump-to-container-7">
-        <h1><a href="#jump-to-container-7"><span>7</span> – <em>Align Flex End</em></a></h1>
+        <h1><a href="#jump-to-container-7"><span>7</span> – <em>Align: Flex-End</em></a></h1>
         <details open></details>
         <div class="container container-7">
           <div class="item item-1"><div>1</div></div>
@@ -108,7 +117,7 @@
       </article>
 
       <article id="jump-to-container-6">
-        <h1><a href="#jump-to-container-6"><span>6</span> – <em>Justify Space Around</em></a></h1>
+        <h1><a href="#jump-to-container-6"><span>6</span> – <em>Space-Evenly</em></a></h1>
         <details open></details>
         <div class="container container-6">
           <div class="item item-1"><div>1</div></div>
@@ -118,7 +127,7 @@
       </article>
 
       <article id="jump-to-container-5">
-        <h1><a href="#jump-to-container-5"><span>5</span> – <em>Justify Space Between</em></a></h1>
+        <h1><a href="#jump-to-container-5"><span>5</span> – <em>Space-Between</em></a></h1>
         <details open></details>
         <div class="container container-5">
           <div class="item item-1"><div>1</div></div>
@@ -128,7 +137,7 @@
       </article>
 
       <article id="jump-to-container-4">
-        <h1><a href="#jump-to-container-4"><span>4</span> – <em>Justify Center</em></a></h1>
+        <h1><a href="#jump-to-container-4"><span>4</span> – <em>Center</em></a></h1>
         <details open></details>
         <div class="container container-4">
           <div class="item item-1"><div>1</div></div>
@@ -138,7 +147,7 @@
       </article>
 
       <article id="jump-to-container-3">
-        <h1><a href="#jump-to-container-3"><span>3</span> – <em>Justify Flex End</em></a></h1>
+        <h1><a href="#jump-to-container-3"><span>3</span> – <em>Flex-End</em></a></h1>
         <details open></details>
         <div class="container container-3">
           <div class="item item-1"><div>1</div></div>
