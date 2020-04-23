@@ -1,53 +1,78 @@
+/* EXAMPLE 1 */
+
 .container-1 {
   display: block;
 }
 
-.container-2 {
-  display: flex;
-}
 
-.container-3 {
-  display: flex;
-  justify-content: flex-end;
-}
+/* EXAMPLE 2 */
 
-.container-4 {
-  display: flex;
-  justify-content: center;
-}
+.container-2 {}
 
-.container-5 {
-  display: flex;
-  justify-content: space-between;
-}
 
-.container-6 {
-  display: flex;
-  justify-content: space-evenly;
-}
+/* EXAMPLE 3 */
 
-.container-7 {
-  display: flex;
-  align-items: flex-end;
-}
+.container-3 {}
 
-.container-8 {
-  display: flex;
-  align-items: center;
-}
 
-.container-9 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+/* EXAMPLE 4 */
+
+.container-4 {}
+
+
+/* EXAMPLE 5 */
+
+.container-5 {}
+
+
+/* EXAMPLE 6 */
+
+.container-6 {}
+
+
+/* EXAMPLE 7 */
+
+.container-7 {}
+
+
+/* EXAMPLE 8 */
+
+.container-8 {}
+
+
+/* EXAMPLE 9 */
+
+.container-9 {}
+
+
+/* EXAMPLE 10 */
 
 .container-10 {}
 
+
+/* EXAMPLE 11 */
+
 .container-11 {}
+
+
+/* EXAMPLE 12 */
 
 .container-12 {}
 
+
+/* EXAMPLE 13 */
+
 .container-13 {}
 
+.container-13 .item {}
+
+.container-13 .item-1 {}
+
+
+/* EXAMPLE 14 */
+
 .container-14 {}
+
+.container-14 .item {}
+
+.container-14 .item-1 {}
