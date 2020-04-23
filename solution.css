@@ -58,13 +58,3 @@
   justify-content: space-between;
   align-items: flex-end;
 }
-
-.container-13 {
-  display: flex;
-}
-
-.container-13 .item {
-  /* width: initial; */
-  flex-basis: 50px;
-  flex-grow: 1;
-}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:ital,wght@1,500&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -27,7 +29,9 @@
   
   /* MISC */
   --border-default: var(--border-size) solid;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  text-align: justify;
 }
 
 body {
@@ -51,9 +55,12 @@ article:hover {
 }
 
 h1 {
-  color: var(--text-color);
   line-height: 1em;
   text-align: center;
+}
+
+h1 span {
+  text-shadow: black 0 0 7px;
 }
 
 a {
@@ -70,49 +77,77 @@ a:active {
   border-bottom-color: hotpink;
 }
 
-h3 {
-  color: var(--text-color);
-  font-weight: normal;
+details {
+  margin-bottom: 10px;
+}
+
+code {
+  background-color: pink;
+  outline: 1px solid hotpink;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-family: "Source Code Pro", monospace;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
+
+blockquote {
+  border-left: 1px solid grey;
+  padding-left: 10px;
 }
 
 .container {
   background-color: var(--container-color);
   border: var(--border-default);
-  border-color: var(--container-border-color);
+  border-color: var(--container--color);
   padding: 10px;
   height: var(--article-height);
   width: 100%;
+  resize: both;
+  overflow: scroll;
+}
+
+::-webkit-resizer {
+  background-color: var(--container-border-color);
+  border-radius: 50px 0 0 0;
 }
 
 .item {
   border: var(--border-default);
   height: var(--item-size);
   width: var(--item-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.item:nth-child(1) {
+.item div {
+  font-size: 1.5em;
+}
+
+.item-1 {
   background-color: var(--item-1-color);
   border-color: var(--item-1-border-color);
 }
 
-.item:nth-child(1):hover {
+.item-1:hover {
   border-color: var(--item-1-border-hover-color);
 }
 
-.item:nth-child(2) {
+.item-2 {
   background-color: var(--item-2-color);
   border-color: var(--item-2-border-color);
 }
 
-.item:nth-child(2):hover {
+.item-2:hover {
   border-color: var(--item-2-border-hover-color);
 }
 
-.item:nth-child(3) {
+.item-3 {
   background-color: var(--item-3-color);
   border-color: var(--item-3-border-color);
 }
 
-.item:nth-child(3):hover {
+.item-3:hover {
   border-color: var(--item-3-border-hover-color);
 }
