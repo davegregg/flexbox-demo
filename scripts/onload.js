@@ -22,7 +22,7 @@
 const currentDomain = window.location.hostname.toLowerCase()
 
 if (currentDomain.endsWith('github.io')) {
-  const flexContainersStylesheet = document.styleSheets
+  const flexContainersStylesheet = Array.from(document.styleSheets)
     .find(stylesheet => stylesheet.href.endsWith('flex-containers.css'))
   const solutionsStylesheet = document.querySelector('#solutions-stylesheet')
 
