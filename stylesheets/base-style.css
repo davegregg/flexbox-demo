@@ -9,8 +9,8 @@
   --article-width: 400px;
   --article-height: 300px;
   --item-size: 50px;
-  --border-size: 8px;
-  
+  --border-default: 8px solid;
+
   /* COLORS */
   --text-color: rgba(0, 0, 0, 0.774);
   --background-color: gainsboro;
@@ -26,12 +26,14 @@
   --item-3-color: lightcoral;
   --item-3-border-color: rgb(186, 90, 90);
   --item-3-border-hover-color: rgb(241, 188, 188);
-  
-  /* MISC */
-  --border-default: var(--border-size) solid;
-  font-family: "Roboto", sans-serif;
+
+  /* TEXT */
   color: var(--text-color);
+  font-family: "Roboto", sans-serif;
   text-align: justify;
+
+  /* MISC */
+  padding-bottom: 50em;
 }
 
 body {
@@ -113,9 +115,10 @@ blockquote {
 }
 
 .item {
-  border: var(--border-default);
-  height: var(--item-size);
   width: var(--item-size);
+  height: var(--item-size);
+  border: var(--border-default);
+
   display: flex;
   justify-content: center;
   align-items: center;
