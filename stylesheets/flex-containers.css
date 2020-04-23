@@ -2,9 +2,14 @@
   display: block;
 }
 
-.container-2 {}
+.container-2 {
+  display: flex;
+}
 
-.container-3 {}
+.container-3 {
+  display: flex;
+  justify-content: flex-end;
+}
 
 .container-4 {}
 
