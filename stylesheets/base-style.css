@@ -31,9 +31,6 @@
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
   text-align: justify;
-
-  /* MISC */
-  padding-bottom: 50em;
 }
 
 body {
@@ -42,6 +39,7 @@ body {
 
 header, footer {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 header h1 {
