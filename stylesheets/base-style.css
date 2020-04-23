@@ -40,6 +40,20 @@ body {
   background-color: var(--background-color);
 }
 
+header, footer {
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 3em;
+  text-shadow: white 0 0 7px;
+}
+
+header h3 {
+  font-weight: normal;
+}
+
 main {
   display: flex;
   flex-direction: column;
