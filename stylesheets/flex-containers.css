@@ -11,17 +11,36 @@
   justify-content: flex-end;
 }
 
-.container-4 {}
+.container-4 {
+  display: flex;
+  justify-content: center;
+}
 
-.container-5 {}
+.container-5 {
+  display: flex;
+  justify-content: space-between;
+}
 
-.container-6 {}
+.container-6 {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-.container-7 {}
+.container-7 {
+  display: flex;
+  align-items: flex-end;
+}
 
-.container-8 {}
+.container-8 {
+  display: flex;
+  align-items: center;
+}
 
-.container-9 {}
+.container-9 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 .container-10 {}
 
