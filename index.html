@@ -62,7 +62,25 @@
 
       <article id="jump-to-container-12">
         <h1><a href="#jump-to-container-12"><span>12</span> – <em>Column + Space-Between + Align: End</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            Let's combine together the three properties we've covered: <code>justify-content</code>, <code>align-items</code>, and <code>flex-direction</code>.
+          </p>
+          <p>
+            Let's observe what happens when we set:
+            <ul>
+              <li><code>flex-direction</code> to <code>column</code></li>
+              <li><code>justify-content</code> to <code>space-between</code></li>
+              <li><code>align-items</code> to <code>flex-end</code></li>
+            </ul>
+          </p>
+          <p>
+            Break down what each is doing, in order.
+          </p>
+          <p>
+            Also, bear in mind that, if you are going to change the <em>main-axis</em> using <code>flex-direction</code>, it is <em>far easier</em> to do that <em>before setting any other flex property</em> – because everything is based on the <em>main-axis.</em>
+          </p>
+        </details>
         <div class="container container-12">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -71,8 +89,21 @@
       </article>
 
       <article id="jump-to-container-11">
-        <h1><a href="#jump-to-container-11"><span>11</span> – <em>Change the Axis: Column</em></a></h1>
-        <details open></details>
+        <h1><a href="#jump-to-container-11"><span>11</span> – <em>Flex-Direction: Column</em></a></h1>
+        <details>
+          <p>
+            Now, we get to something we've been expecting: we can change the main-axis from <code>row</code> to <code>column</code>.
+          </p>
+          <p>
+            Initially, you'll notice this <em>appears</em> identical to the way these boxes display in <a href="#jump-to-container-1">Example 1</a> – where the container had not yet be set to <code>display: flex;</code>.
+          </p>
+          <p>
+            BUT despite the initial visual similarity, we now have the flexibility of flexbox to work with.
+          </p>
+          <p>
+            Just remember: when we change the <code>flex-direction</code>, we change the axis, and when we change the axis, the meanings of <code>justify-content</code> (for main-axis alignment) and <code>align-items</code> (for cross-axis alignment) change.
+          </p>
+        </details>
         <div class="container container-11">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -81,8 +112,21 @@
       </article>
 
       <article id="jump-to-container-10">
-        <h1><a href="#jump-to-container-10"><span>10</span> – <em>Row-Reverse</em></a></h1>
-        <details open></details>
+        <h1><a href="#jump-to-container-10"><span>10</span> – <em>Flex-Direction: Row-Reverse</em></a></h1>
+        <details>
+          <p>
+            Now, let's start toying with <em>main-axis.</em> This we can do by changing the <code>flex-direction</code> to something other than the default of <code>row</code>.
+          </p>
+          <p>
+            One option we have is to use <code>row-reverse</code> to change the starting position of the row to its opposite. The effect will appear as though we're looking at the row in a mirror.
+          </p>
+          <p>
+            The items themselves should remain in the order in which we wrote them, relative to the axis – not necessarily to our eyes.
+          </p>
+          <p>
+            So <code>item-1</code> will now start on the right-hand side of the row, <code>item-2</code> will follow, etc.
+          </p>
+        </details>
         <div class="container container-10">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -91,8 +135,21 @@
       </article>
 
       <article id="jump-to-container-9">
-        <h1><a href="#jump-to-container-9"><span>9</span> – <em>Space-Around + Align: Center</em></a></h1>
-        <details open></details>
+        <h1><a href="#jump-to-container-9"><span>9</span> – <em>Justify-Content + Align-Items</em></a></h1>
+        <details>
+          <p>
+            Now, we're going to combine some tricks. We can use <code>justify-content</code> and <code>align-items</code> <em>together</em> to distribute flex items along both the row and column axes.
+          </p>
+          <p>
+            And again all the people rejoiced.
+          </p>
+          <p>
+            Let's set <code>justify-content</code> to <code>space-around</code> and <code>align-items</code> to <code>center</code>.
+          </p>
+          <p>
+            (<code>space-around</code> is just like <code>space-evenly</code>, except it only distributes <em>half</em> the usual portion to the ends of the axis. But the items still get evenly spaced out amongst themselves.)
+          </p>
+        </details>
         <div class="container container-9">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -102,7 +159,14 @@
 
       <article id="jump-to-container-8">
         <h1><a href="#jump-to-container-8"><span>8</span> – <em>Align: Center</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            Since the <code>align-items</code> property speaks in "columns" (by default), setting its value to <code>center</code> will center the container's items <em>vertically.</em>
+          </p>
+          <p>
+            And all the people rejoiced.
+          </p>
+        </details>
         <div class="container container-8">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -112,7 +176,17 @@
 
       <article id="jump-to-container-7">
         <h1><a href="#jump-to-container-7"><span>7</span> – <em>Align: Flex-End</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            The <code>align-items</code> and <code>justify-content</code> properties are identical to each other – with one important distinction: whereas <code>justify-content</code> distributes items along the <em>main-axis,</em> <code>align-items</code> distributes items along the <em>cross-axis.</em>
+          </p>
+          <p>
+            If the <code>main-axis</code> is <code>row</code>, then <code>align-items</code> will distribute things along columns.
+          </p>
+          <p>
+            So, setting <code>align-items</code> to <code>flex-end</code> will move the items each to the end of their respective columns – the bottom.
+          </p>
+        </details>
         <div class="container container-7">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -122,7 +196,14 @@
 
       <article id="jump-to-container-6">
         <h1><a href="#jump-to-container-6"><span>6</span> – <em>Space-Evenly</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            Setting <code>justify-content</code> on a flex container to <code>space-evenly</code> will distribute any extra space in the main-axis <em>between the items equally,</em> just like <code>space-between.</code>
+          </p>
+          <p>
+            However, it will <em>also</em> distribute an equal amount to the start and the end of the axis. You'll get space on the ends – not just in-between.
+          </p>
+        </details>
         <div class="container container-6">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -132,7 +213,14 @@
 
       <article id="jump-to-container-5">
         <h1><a href="#jump-to-container-5"><span>5</span> – <em>Space-Between</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            Setting <code>justify-content</code> on a flex container to <code>space-between</code> will distribute any extra space in the main-axis <em>between the items equally.</em>
+          </p>
+          <p>
+            No space will be distributed to the start or the end of the main-axis.
+          </p>
+        </details>
         <div class="container container-5">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -142,7 +230,11 @@
 
       <article id="jump-to-container-4">
         <h1><a href="#jump-to-container-4"><span>4</span> – <em>Center</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            Setting <code>justify-content</code> on a flex container to <code>center</code> will keep its items always remain in the center of the <em>main-axis</em>.
+          </p>
+        </details>
         <div class="container container-4">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -152,7 +244,15 @@
 
       <article id="jump-to-container-3">
         <h1><a href="#jump-to-container-3"><span>3</span> – <em>Flex-End</em></a></h1>
-        <details open></details>
+        <details>
+          <p>
+            The <code>justify-content</code> property is responsible for spacing things out along the current <em>main-axis</em> (which is <code>row</code>, by default).
+          </p>
+          
+          <p>
+            Setting <code>justify-content</code> on a flex container to <code>flex-end</code> will move its items to the end of the <em>main-axis</em> – in this case, to the end of the row.
+          </p>
+        </details>
         <div class="container container-3">
           <div class="item item-1"><div>1</div></div>
           <div class="item item-2"><div>2</div></div>
@@ -162,8 +262,11 @@
 
       <article id="jump-to-container-2">
         <h1><a href="#jump-to-container-2"><span>2</span> – <em>Basic Flex</em></a></h1>
-        <details open>
-          By default, a flex container will adjust the flow of its content as a row. It's <em>main axis</em> is "row".
+        <details>
+          <p>
+            By default, a flex container will adjust the flow of its content as a row. It's <em>main-axis</em> is "row".
+          </p>
+          <p>The elements immediately inside (direct-descendant) a <em>flex container</em> are called, <em>"flex items."</em></p>
         </details>
         <div class="container container-2">
           <div class="item item-1"><div>1</div></div>
@@ -175,7 +278,12 @@
       <article id="jump-to-container-1">
         <h1><a href="#jump-to-container-1"><span>1</span> – <em>No Flex</em></a></h1>
         <details open>
-          Unless we've changed something, DIVs (like we have below) will flow naturally into the <em>appearance</em> of a column. Why?
+          <p>
+            Unless we've changed something (like using <code>float</code> or <code>display: inline-block;</code>), block-level elements, like DIVs, will flow naturally into the <em>appearance</em> of a column. Why?
+          </p>
+          <p>
+            Because that's the natural flow of an HTML document for block-level elements.
+          </p>
         </details>
         <div class="container container-1">
           <div class="item item-1"><div>1</div></div>
