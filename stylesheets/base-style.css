@@ -70,7 +70,7 @@ header h3 {
 
 main {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -116,7 +116,7 @@ code {
   outline: 1px solid var(--code-outline-color);
   padding-left: 2px;
   padding-right: 2px;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Source Code Pro", Consolas, "Courier New", monospace;
   font-size: 0.8em;
   white-space: nowrap;
 }
