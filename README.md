@@ -11,5 +11,8 @@ This project is meant to be used in three ways:
 ---
 
 #### TODO:
-- **Show the CSS:** Use a syntax highlighting library and show on the page the implemented CSS for each container, so that we don't have to flip back and forth between the page rendered in the browser and the CSS file.
-- **Edit the CSS live:** Permit live-editing of the CSS for each container, to make the page interactive.
+- Detect plaintext-only feature and prompt with undo? Or other attempt at cross-browser compat with Firefox, Safari, Edge
+- Cache <style> elements individually
+- Then add a "View Solution" toggle for each `.container`
+- Capture Ctrl+/ and Cmd+/ to toggle line comments
+- Perhaps the "Solutions" may be cachable, as well, to be restored by a page-wide Reset
