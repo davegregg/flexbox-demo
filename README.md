@@ -1,12 +1,11 @@
-# Flexbox Demo, Katas, and Reference
+# Flexbox Demo
 
-This project is meant to be used in three ways:
+**This project serves as a tool for teaching CSS Flexbox:** Do the katas together with learners, narrating as you go. Please see the solutions for direction.
 
-1. **As a set of katas:** Fork and clone it. Open `index.html` in a browser. Then edit `stylesheets/flex-containers.css`. You will find that, for example, ".container-2 {}" is where you will write the CSS for what you see in the browser as "2 – Basic Flex". Work through these like katas.
-
-2. **As tool for demoing Flexbox to others:** Do the katas together with students, narrating as you go. To prepare, please see `stylesheets/solutions.css` for the solution code.
-
-3. **As a basic reference for basic Flexbox features:** When this project is hosted on GitHub Pages, the JavaScript in `scripts/onload.js` detects this automatically *and switches the active stylesheet* from `stylesheets/flex-containers.css` to `stylesheets/solutions.css`, so that each container correctly displays the effect of the Flexbox feature being discussed.
+### Advice:
+-  Repetition is good.
+-  Focus on the vocabulary of "main axis" and "cross axis".
+-  Continually reinforce the idea that flexbox is as much about distributing available *space* as it is about distributing flex *items*.
 
 ---
 
