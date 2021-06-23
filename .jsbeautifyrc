@@ -1,0 +1,3 @@
+{
+  "beautify.ignore": ["index.html", "scripts/solutions.js"]
+}
